@@ -1,0 +1,17 @@
+ИЗОБРАЖЕНИЯ ДЛЯ САЙТА Fly Astana PTS (папка images/, имена точь-в-точь)
+
+logo.png  — логотип (прозрачный PNG, высота ~88px). Пока нет — текст Fly Astana.
+favicon.png — иконка вкладки
+hero-main.webp — фото на главную (4:3, авто/премиум-салон)
+
+По 6 фото на каждый автомобиль (1 — карточка, 6 — галерея с увеличением), 4:3:
+  land-cruiser-300-1.webp … land-cruiser-300-6.webp   (Toyota Land Cruiser 300)
+  mercedes-s223-1.webp … mercedes-s223-6.webp   (Mercedes-Benz S-class (W223))
+  mercedes-s222-1.webp … mercedes-s222-6.webp   (Mercedes-Benz S-class (W222))
+  mercedes-v-class-1.webp … mercedes-v-class-6.webp   (Mercedes-Benz V-class)
+  mercedes-sprinter-1.webp … mercedes-sprinter-6.webp   (Mercedes-Benz Sprinter VIP)
+  haiger-bus-1.webp … haiger-bus-6.webp   (Автобус Haiger)
+  camry-80-1.webp … camry-80-6.webp   (Toyota Camry 80)
+  camry-75-1.webp … camry-75-6.webp   (Toyota Camry 75)
+
+Итого: 48 фото авто + hero + logo + favicon

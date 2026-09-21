@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru" data-page="fleet">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Автопарк — авто с водителем в Астане | Fly Astana PTS</title>
+<meta name="description" content="Автопарк Fly Astana PTS — премиальные авто с водителем в Астане.">
+<link rel="canonical" href="https://flypts.kz/avtopark.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Автопарк — авто с водителем в Астане | Fly Astana PTS">
+<meta property="og:description" content="Автопарк Fly Astana PTS — премиальные авто с водителем в Астане.">
+<meta property="og:image" content="images/hero-main.webp">
+<meta property="og:url" content="https://flypts.kz/avtopark.html">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1B1A18;--surf:#242320;--surf2:#2C2A26;--line:rgba(255,255,255,.09);--line2:rgba(255,255,255,.17);--text:#ECE7DE;--muted:#9C9488;--gold:#C2A265;--goldh:#D6B87B;--goldsoft:rgba(194,162,101,.13)}
+*,*::before,*::after{box-sizing:border-box}*{margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{font-family:'Jost',sans-serif;color:var(--text);background:var(--bg);line-height:1.65;font-weight:300;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+h1,h2,h3,.disp{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1.12;letter-spacing:.005em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+.gold{color:var(--gold)}.muted{color:var(--muted)}.center{text-align:center}
+.sec{padding:56px 0}
+@media(min-width:768px){.sec{padding:82px 0}}
+.s-surf{background:var(--surf)}
+.kicker{font-family:'Jost',sans-serif;font-weight:400;letter-spacing:.28em;text-transform:uppercase;font-size:11.5px;color:var(--gold)}
+.h2{font-size:32px;color:var(--text)}
+@media(min-width:768px){.h2{font-size:46px}}
+.sub{color:var(--muted);font-size:16px;font-weight:300;max-width:560px}
+.rule{width:52px;height:1px;background:var(--gold);margin:18px 0 0}
+.rule-c{margin:18px auto 0}
+/* buttons */
+.btn,.btn-o{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:'Jost',sans-serif;font-weight:500;letter-spacing:.03em;border-radius:2px;cursor:pointer;text-align:center;transition:background .2s,color .2s,border-color .2s;font-size:14px;text-transform:uppercase}
+.btn{background:var(--gold);color:#1B1A18;padding:15px 30px;border:0}
+.btn:hover{background:var(--goldh)}
+.btn-o{border:1px solid var(--line2);color:var(--text);padding:14px 28px;background:transparent}
+.btn-o:hover{border-color:var(--gold);color:var(--gold)}
+.btn-full{width:100%}
+/* driver badge */
+.dbadge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--gold);color:var(--gold);border-radius:2px;padding:7px 14px;font-family:'Jost',sans-serif;font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:11px}
+.dbadge svg{flex-shrink:0}
+/* header */
+.header{position:sticky;top:0;z-index:50;background:rgba(27,26,24,.9);border-bottom:1px solid var(--line);backdrop-filter:saturate(140%) blur(10px)}
+.header-in{display:flex;align-items:center;justify-content:space-between;height:66px;gap:18px}
+@media(min-width:768px){.header-in{height:80px}}
+.logo-link{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.logo{height:38px;width:auto;max-width:180px;object-fit:contain}
+@media(min-width:768px){.logo{height:44px}}
+.wm{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:23px;color:var(--text);line-height:1;white-space:nowrap;letter-spacing:.02em}
+.wm b{color:var(--gold);font-weight:600}
+.wm span{display:block;font-family:'Jost',sans-serif;font-weight:300;font-size:9px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.nav{display:none;align-items:center;gap:30px;min-width:0}
+.nav-a{font-family:'Jost',sans-serif;font-weight:400;font-size:14px;letter-spacing:.04em;color:var(--text);white-space:nowrap;transition:color .18s}
+.nav-a:hover{color:var(--gold)}
+.hcta{display:none;align-items:center;gap:16px;flex-shrink:0}
+.hphone{font-family:'Jost',sans-serif;font-weight:500;font-size:16px;color:var(--text);white-space:nowrap}
+.hphone:hover{color:var(--gold)}
+.lang{display:flex;align-items:center;gap:2px}
+.lang button{background:none;border:0;color:var(--muted);font-family:'Jost',sans-serif;font-size:13px;font-weight:400;letter-spacing:.05em;cursor:pointer;padding:5px 7px;border-radius:2px;transition:color .15s}
+.lang button:hover{color:var(--text)}
+.lang button.on{color:var(--gold)}
+.burger{display:flex;align-items:center;background:none;border:1px solid var(--line2);color:var(--text);padding:9px 11px;border-radius:2px;cursor:pointer}
+@media(min-width:1040px){.nav{display:flex}.hcta{display:flex}.burger{display:none}}
+/* fullscreen menu */
+.menu{position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100dvh;background:var(--bg);z-index:60;display:flex;flex-direction:column;padding:18px 24px calc(20px + env(safe-area-inset-bottom));transform:translateX(101%);transition:transform .34s cubic-bezier(.4,0,.2,1);overflow:hidden}
+.menu.open{transform:translateX(0)}
+.menu-top{display:flex;align-items:center;justify-content:space-between;height:48px;flex-shrink:0}
+.close{background:none;border:0;color:var(--text);cursor:pointer;padding:6px;line-height:0}
+.menu-links{flex:1;display:flex;flex-direction:column;justify-content:center;gap:4px;min-height:0}
+.menu-links a{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(24px,6vw,34px);color:var(--text);padding:7px 0;border-bottom:1px solid var(--line)}
+.menu-links a:hover{color:var(--gold)}
+.menu-bottom{flex-shrink:0;padding-top:14px;display:flex;flex-direction:column;gap:12px}
+.menu-lang{display:flex;gap:6px;margin-bottom:4px}
+.menu-lang button{flex:1;background:none;border:1px solid var(--line2);color:var(--muted);font-family:'Jost',sans-serif;font-size:14px;padding:9px 0;border-radius:2px;cursor:pointer}
+.menu-lang button.on{border-color:var(--gold);color:var(--gold)}
+.menu-phone{font-family:'Jost',sans-serif;font-weight:500;font-size:22px;color:var(--text)}
+@media(min-width:1040px){.menu{display:none!important}}
+/* hero */
+.hero{position:relative;padding:44px 0 8px}
+@media(min-width:900px){.hero{padding:70px 0 20px}}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:32px;align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.08fr .92fr;gap:50px}}
+.h1{font-size:clamp(38px,8vw,74px);color:var(--text);font-weight:600}
+.hero-sub{margin-top:20px;color:var(--muted);font-size:18px;font-weight:300;max-width:500px;line-height:1.6}
+.hero-btns{margin-top:30px;display:flex;flex-direction:column;gap:12px}
+@media(min-width:480px){.hero-btns{flex-direction:row;align-items:center}}
+.hero-note{margin-top:24px;display:flex;align-items:flex-start;gap:11px;color:var(--muted);font-size:14px;max-width:460px}
+.hero-note svg{flex-shrink:0;color:var(--gold);margin-top:2px}
+.hero-img{position:relative;background:var(--surf);border:1px solid var(--line);aspect-ratio:4/3;overflow:hidden;border-radius:3px}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:44px}
+@media(min-width:768px){.stats{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:56px}}
+.stat{background:var(--bg);padding:26px 18px;text-align:center}
+.stat-v{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:38px;color:var(--gold);line-height:1}
+.stat-k{color:var(--muted);font-size:13px;margin-top:8px;letter-spacing:.02em}
+/* placeholder image */
+.ph{position:relative;background:var(--surf2);overflow:hidden}
+.ph .lbl,.hero-img .lbl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.2);font-size:12px;text-align:center;padding:10px}
+.ph img,.hero-img img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover}
+.r43{aspect-ratio:4/3}.r169{aspect-ratio:16/10}
+/* services */
+.grid-srv{display:grid;grid-template-columns:minmax(0,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+@media(min-width:640px){.grid-srv{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.grid-srv{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.srv{background:var(--bg);padding:32px 28px;transition:background .2s}
+.srv:hover{background:var(--surf)}
+.srv-ic{color:var(--gold);margin-bottom:16px}
+.srv-t{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:24px;color:var(--text);margin-bottom:8px}
+.srv-d{color:var(--muted);font-size:14.5px;line-height:1.6}
+/* fleet cards */
+.grid-fleet{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+@media(min-width:620px){.grid-fleet{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.grid-fleet{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.fcard{display:flex;flex-direction:column;background:var(--surf);border:1px solid var(--line);border-radius:3px;overflow:hidden;transition:border-color .2s,transform .2s}
+.fcard:hover{border-color:var(--gold);transform:translateY(-3px)}
+.fcard-img{position:relative}
+.fcard-cls{position:absolute;top:12px;left:12px;z-index:2;background:rgba(27,26,24,.82);color:var(--gold);font-family:'Jost',sans-serif;font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:10.5px;padding:6px 11px;border-radius:2px;border:1px solid var(--line2)}
+.fcard-b{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.fcard-t{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:25px;color:var(--text);line-height:1.1}
+.fcard-d{color:var(--muted);font-size:13.5px;margin-top:8px;line-height:1.55;flex:1}
+.fcard-meta{display:flex;gap:18px;margin-top:16px;color:var(--muted);font-size:13px}
+.fcard-meta span{display:inline-flex;align-items:center;gap:6px}
+.fcard-meta svg{color:var(--gold)}
+.fcard-price{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.fcard-price .lab{color:var(--muted);font-size:13px}
+.fcard-price .val{font-family:'Jost',sans-serif;font-weight:500;font-size:19px;color:var(--gold)}
+.fcard-btn{margin-top:18px}
+/* driver ribbon under fleet title */
+.drv-line{display:inline-flex;align-items:center;gap:9px;color:var(--muted);font-size:14px;margin-top:14px}
+.drv-line svg{color:var(--gold);flex-shrink:0}
+/* why */
+.grid-why{display:grid;grid-template-columns:minmax(0,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+@media(min-width:640px){.grid-why{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.grid-why{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.why{background:var(--bg);padding:28px 24px}
+.why-t{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:21px;color:var(--text);margin-bottom:8px}
+.why-d{color:var(--muted);font-size:13.5px;line-height:1.6}
+/* steps */
+.grid-steps{display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+@media(min-width:820px){.grid-steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:0}}
+.step{padding:4px 0}
+@media(min-width:820px){.step{padding:0 34px;border-left:1px solid var(--line)}.step:first-child{padding-left:0;border-left:0}}
+.step-n{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:42px;color:var(--gold);line-height:1;margin-bottom:12px}
+.step-t{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:22px;color:var(--text);margin-bottom:6px}
+.step-d{color:var(--muted);font-size:14.5px;line-height:1.6}
+/* cta band */
+.band{background:var(--surf);border:1px solid var(--line);border-radius:4px;padding:40px 28px;display:flex;flex-direction:column;gap:22px;align-items:flex-start}
+@media(min-width:768px){.band{flex-direction:row;align-items:center;justify-content:space-between;padding:52px 52px}}
+.band-h{font-size:30px;color:var(--text)}
+@media(min-width:768px){.band-h{font-size:40px}}
+.band-p{color:var(--muted);margin-top:8px;font-size:15px;max-width:420px}
+.band-r{display:flex;flex-direction:column;gap:12px;flex-shrink:0}
+@media(min-width:480px){.band-r{flex-direction:row;align-items:center}}
+.band-phone{font-family:'Jost',sans-serif;font-weight:500;font-size:24px;color:var(--gold);white-space:nowrap}
+/* inner hero */
+.inner{padding:30px 0 4px}
+@media(min-width:768px){.inner{padding:44px 0 10px}}
+.crumb{font-size:13px;color:var(--muted);margin-bottom:16px;letter-spacing:.02em}
+.crumb a:hover{color:var(--gold)}
+.page-h{font-size:clamp(34px,6vw,54px);color:var(--text);font-weight:600}
+/* car page */
+.car-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:34px}
+@media(min-width:900px){.car-grid{grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}}
+.gmain{position:relative;border:1px solid var(--line);border-radius:3px;overflow:hidden;cursor:zoom-in}
+.gthumbs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:10px}
+.gthumb{position:relative;border:1px solid var(--line);border-radius:2px;overflow:hidden;cursor:pointer;background:var(--surf2);aspect-ratio:4/3;padding:0}
+.gthumb.on{border-color:var(--gold)}
+.gthumb img{width:100%;height:100%;object-fit:cover;display:block}
+.gthumb .lbl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.2);font-size:9px;text-align:center;padding:4px}
+.car-cls{display:inline-block;color:var(--gold);font-family:'Jost',sans-serif;font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:11px;margin-bottom:10px}
+.car-name{font-size:clamp(30px,5vw,44px);color:var(--text);font-weight:600;line-height:1.08}
+.car-desc{color:var(--muted);font-size:16px;margin-top:14px;line-height:1.65}
+.car-specs{display:flex;gap:26px;margin-top:22px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.car-spec .k{color:var(--muted);font-size:12px;letter-spacing:.04em}
+.car-spec .v{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:26px;color:var(--text);line-height:1;margin-top:4px}
+.pricebox{margin-top:22px}
+.prow{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--line)}
+.prow .k{color:var(--muted);font-size:14px;display:flex;align-items:center;gap:9px}
+.prow .k svg{color:var(--gold)}
+.prow .v{font-family:'Jost',sans-serif;font-weight:500;font-size:20px;color:var(--gold)}
+.car-cta{margin-top:24px;display:flex;flex-direction:column;gap:12px}
+@media(min-width:480px){.car-cta{flex-direction:row;align-items:center}}
+.car-driver{margin-top:16px;display:flex;align-items:center;gap:10px;color:var(--muted);font-size:14px}
+.car-driver svg{color:var(--gold)}
+/* contacts */
+.cgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+@media(min-width:700px){.cgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.crow{display:flex;gap:14px;align-items:flex-start;background:var(--surf);border:1px solid var(--line);border-radius:3px;padding:22px}
+.crow-ic{flex-shrink:0;color:var(--gold);margin-top:2px}
+.crow .k{color:var(--muted);font-size:13px;margin-bottom:3px}
+.crow .v{color:var(--text);font-size:17px;font-weight:400}
+.crow .v:hover{color:var(--gold)}
+/* footer */
+.footer{background:#151412;border-top:1px solid var(--line)}
+.grid-foot{display:grid;grid-template-columns:minmax(0,1fr);gap:30px;padding:52px 0}
+@media(min-width:768px){.grid-foot{grid-template-columns:2fr 1fr 1.2fr;gap:40px}}
+.foot-t{font-family:'Jost',sans-serif;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--text);font-size:12px;margin-bottom:16px}
+.foot-list li{margin-bottom:10px}
+.foot-link{color:var(--muted);font-size:14px}
+.foot-link:hover{color:var(--gold)}
+.foot-p{color:var(--muted);font-size:14px;line-height:1.7}
+.foot-phone{font-family:'Jost',sans-serif;font-weight:500;color:var(--text);font-size:20px;margin-bottom:6px;display:inline-block}
+.foot-bottom{border-top:1px solid var(--line)}
+.foot-bottom-in{padding:20px 0;display:flex;flex-direction:column;gap:8px;color:var(--muted);font-size:12px}
+@media(min-width:600px){.foot-bottom-in{flex-direction:row;justify-content:space-between;align-items:center}}
+.foot-bottom-in a:hover{color:var(--gold)}
+/* fab */
+.fab-wrap{position:fixed;z-index:40;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px}
+.fab{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:0;cursor:pointer;box-shadow:0 10px 26px rgba(0,0,0,.5);transition:transform .18s,opacity .25s}
+.fab:hover{transform:translateY(-2px)}
+.fab-wa{background:#25D366}
+.fab-call{background:var(--gold)}
+.fab-up{background:var(--surf2);border:1px solid var(--line2);color:var(--text);opacity:0;pointer-events:none}
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(12,11,10,.95);z-index:80;display:none;align-items:center;justify-content:center;padding:30px}
+.lb.open{display:flex}
+.lb img{max-width:92vw;max-height:82vh;object-fit:contain;border-radius:3px}
+.lb-x{position:absolute;top:20px;right:24px;background:none;border:0;color:#fff;cursor:pointer;padding:8px;line-height:0}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;cursor:pointer;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.lb-prev{left:18px}.lb-next{right:18px}
+.lb-count{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:rgba(255,255,255,.7);font-family:'Jost',sans-serif;font-size:14px}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap header-in">
+    <a href="index.html" class="logo-link"><img src="images/logo.png" alt="Fly Astana PTS" class="logo" onerror="var s=document.createElement('span');s.className='wm';s.innerHTML='Fly <b>Astana</b><span>Premium Transfers</span>';this.replaceWith(s)"></a>
+    <nav class="nav"><a href="index.html" class="nav-a"><span data-i18n="nav_home">Главная</span></a><a href="avtopark.html" class="nav-a"><span data-i18n="nav_fleet">Автопарк</span></a><a href="uslugi.html" class="nav-a"><span data-i18n="nav_services">Услуги</span></a><a href="o-kompanii.html" class="nav-a"><span data-i18n="nav_about">О компании</span></a><a href="contacts.html" class="nav-a"><span data-i18n="nav_contacts">Контакты</span></a></nav>
+    <div class="hcta">
+      <div class="lang"><button data-lang="ru" class="on">RU</button><button data-lang="kz">ҚЗ</button><button data-lang="en">EN</button><button data-lang="zh">中</button></div>
+      <a href="tel:+77759876697" class="hphone">+7 775 987 6697</a>
+      <a href="https://wa.me/77770105157?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%20%D1%81%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%20%28Fly%20Astana%20PTS%29." target="_blank" rel="noopener" class="btn"><span data-i18n="book">Забронировать</span></a>
+    </div>
+    <button id="burger" class="burger" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</header>
+<div id="menu" class="menu">
+  <div class="menu-top"><span class="wm">Fly <b>Astana</b></span>
+    <button id="close" class="close" aria-label="Close"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <nav class="menu-links"><a href="index.html"><span data-i18n="nav_home">Главная</span></a><a href="avtopark.html"><span data-i18n="nav_fleet">Автопарк</span></a><a href="uslugi.html"><span data-i18n="nav_services">Услуги</span></a><a href="o-kompanii.html"><span data-i18n="nav_about">О компании</span></a><a href="contacts.html"><span data-i18n="nav_contacts">Контакты</span></a></nav>
+  <div class="menu-bottom">
+    <div class="menu-lang"><button data-lang="ru" class="on">RU</button><button data-lang="kz">ҚЗ</button><button data-lang="en">EN</button><button data-lang="zh">中</button></div>
+    <a href="tel:+77759876697" class="menu-phone">+7 775 987 6697</a>
+    <a href="https://wa.me/77770105157?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%20%D1%81%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%20%28Fly%20Astana%20PTS%29." target="_blank" rel="noopener" class="btn btn-full"><span data-i18n="book">Забронировать</span></a>
+  </div>
+</div>
+
+<section class="inner"><div class="wrap">
+  <div class="crumb"><a href="index.html"><span data-i18n="nav_home">Главная</span></a> / <span data-i18n="nav_fleet">Автопарк</span></div>
+  <h1 class="page-h"><span data-i18n="fleet_title">Автопарк</span></h1>
+  <div class="drv-line"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3.2"/><path d="M5 20a7 7 0 0114 0"/><path d="M3 20h18"/></svg><span data-i18n="hero_note">Все автомобили предоставляются только с профессиональным водителем</span></div>
+</div></section>
+<section class="sec" style="padding-top:34px"><div class="wrap"><div class="grid-fleet"><a href="land-cruiser-300.html" class="fcard">
+  <div class="fcard-img"><span class="fcard-cls" data-i18n="cls_biz">Бизнес</span>
+    <div class="ph r43"><span class="lbl">land-cruiser-300-1.webp</span><img src="images/land-cruiser-300-1.webp" alt="Toyota Land Cruiser 300 с водителем в Астане" loading="lazy" onerror="this.remove()"></div></div>
+  <div class="fcard-b">
+    <div class="fcard-t">Toyota Land Cruiser 300</div>
+    <div class="fcard-d" data-i18n="d_land-cruiser-300">Флагманский внедорожник для города и трасс. Простор, надёжность и статус.</div>
+    <div class="fcard-meta"><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M6 20a6 6 0 0112 0"/></svg>4&nbsp;<span data-i18n="pax" style="color:var(--muted)">Пассажиров</span></span><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="12" height="12" rx="2"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>4&nbsp;<span data-i18n="bag" style="color:var(--muted)">Багаж</span></span></div>
+    <div class="fcard-price"><span class="lab"><span data-i18n="from">от</span> · <span data-i18n="p_transfer">Трансфер</span></span><span class="val">50 000 ₸</span></div>
+    <div class="fcard-btn"><span class="btn btn-o btn-full" data-i18n="details">Подробнее</span></div>
+  </div>
+</a><a href="mercedes-s223.html" class="fcard">
+  <div class="fcard-img"><span class="fcard-cls" data-i18n="cls_vip">VIP</span>
+    <div class="ph r43"><span class="lbl">mercedes-s223-1.webp</span><img src="images/mercedes-s223-1.webp" alt="Mercedes-Benz S-class (W223) с водителем в Астане" loading="lazy" onerror="this.remove()"></div></div>
+  <div class="fcard-b">
+    <div class="fcard-t">Mercedes-Benz S-class (W223)</div>
+    <div class="fcard-d" data-i18n="d_mercedes-s223">Новейший флагман S-класса. Тишина, технологии и представительский комфорт.</div>
+    <div class="fcard-meta"><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M6 20a6 6 0 0112 0"/></svg>4&nbsp;<span data-i18n="pax" style="color:var(--muted)">Пассажиров</span></span><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="12" height="12" rx="2"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>3&nbsp;<span data-i18n="bag" style="color:var(--muted)">Багаж</span></span></div>
+    <div class="fcard-price"><span class="lab"><span data-i18n="from">от</span> · <span data-i18n="p_transfer">Трансфер</span></span><span class="val">80 000 ₸</span></div>
+    <div class="fcard-btn"><span class="btn btn-o btn-full" data-i18n="details">Подробнее</span></div>
+  </div>
+</a><a href="mercedes-s222.html" class="fcard">
+  <div class="fcard-img"><span class="fcard-cls" data-i18n="cls_prem">Премиум</span>
+    <div class="ph r43"><span class="lbl">mercedes-s222-1.webp</span><img src="images/mercedes-s222-1.webp" alt="Mercedes-Benz S-class (W222) с водителем в Астане" loading="lazy" onerror="this.remove()"></div></div>
+  <div class="fcard-b">
+    <div class="fcard-t">Mercedes-Benz S-class (W222)</div>
+    <div class="fcard-d" data-i18n="d_mercedes-s222">Представительский седан S-класса. Кожаный салон и плавность хода.</div>
+    <div class="fcard-meta"><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M6 20a6 6 0 0112 0"/></svg>4&nbsp;<span data-i18n="pax" style="color:var(--muted)">Пассажиров</span></span><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="12" height="12" rx="2"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>3&nbsp;<span data-i18n="bag" style="color:var(--muted)">Багаж</span></span></div>
+    <div class="fcard-price"><span class="lab"><span data-i18n="from">от</span> · <span data-i18n="p_transfer">Трансфер</span></span><span class="val">35 000 ₸</span></div>
+    <div class="fcard-btn"><span class="btn btn-o btn-full" data-i18n="details">Подробнее</span></div>
+  </div>
+</a><a href="mercedes-v-class.html" class="fcard">
+  <div class="fcard-img"><span class="fcard-cls" data-i18n="cls_van">Минивэн</span>
+    <div class="ph r43"><span class="lbl">mercedes-v-class-1.webp</span><img src="images/mercedes-v-class-1.webp" alt="Mercedes-Benz V-class с водителем в Астане" loading="lazy" onerror="this.remove()"></div></div>
+  <div class="fcard-b">
+    <div class="fcard-t">Mercedes-Benz V-class</div>
+    <div class="fcard-d" data-i18n="d_mercedes-v-class">VIP-минивэн для групп до 7 человек. Простор для делегаций и семьи.</div>
+    <div class="fcard-meta"><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M6 20a6 6 0 0112 0"/></svg>7&nbsp;<span data-i18n="pax" style="color:var(--muted)">Пассажиров</span></span><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="12" height="12" rx="2"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>5&nbsp;<span data-i18n="bag" style="color:var(--muted)">Багаж</span></span></div>
+    <div class="fcard-price"><span class="lab"><span data-i18n="from">от</span> · <span data-i18n="p_transfer">Трансфер</span></span><span class="val">30 000 ₸</span></div>
+    <div class="fcard-btn"><span class="btn btn-o btn-full" data-i18n="details">Подробнее</span></div>
+  </div>
+</a><a href="mercedes-sprinter.html" class="fcard">
+  <div class="fcard-img"><span class="fcard-cls" data-i18n="cls_van">Минивэн</span>
+    <div class="ph r43"><span class="lbl">mercedes-sprinter-1.webp</span><img src="images/mercedes-sprinter-1.webp" alt="Mercedes-Benz Sprinter VIP с водителем в Астане" loading="lazy" onerror="this.remove()"></div></div>
+  <div class="fcard-b">
+    <div class="fcard-t">Mercedes-Benz Sprinter VIP</div>
+    <div class="fcard-d" data-i18n="d_mercedes-sprinter">VIP-микроавтобус: кожаные диваны и простор для больших групп.</div>
+    <div class="fcard-meta"><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M6 20a6 6 0 0112 0"/></svg>16&nbsp;<span data-i18n="pax" style="color:var(--muted)">Пассажиров</span></span><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="12" height="12" rx="2"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>10&nbsp;<span data-i18n="bag" style="color:var(--muted)">Багаж</span></span></div>
+    <div class="fcard-price"><span class="lab"><span data-i18n="from">от</span> · <span data-i18n="p_transfer">Трансфер</span></span><span class="val">35 000 ₸</span></div>
+    <div class="fcard-btn"><span class="btn btn-o btn-full" data-i18n="details">Подробнее</span></div>
+  </div>
+</a><a href="haiger-bus.html" class="fcard">
+  <div class="fcard-img"><span class="fcard-cls" data-i18n="cls_bus">Автобус</span>
+    <div class="ph r43"><span class="lbl">haiger-bus-1.webp</span><img src="images/haiger-bus-1.webp" alt="Автобус Haiger с водителем в Астане" loading="lazy" onerror="this.remove()"></div></div>
+  <div class="fcard-b">
+    <div class="fcard-t">Автобус Haiger</div>
+    <div class="fcard-d" data-i18n="d_haiger-bus">Туристический автобус: кондиционер, шторки, багажный отсек. Для групп и делегаций.</div>
+    <div class="fcard-meta"><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M6 20a6 6 0 0112 0"/></svg>50&nbsp;<span data-i18n="pax" style="color:var(--muted)">Пассажиров</span></span><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="12" height="12" rx="2"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>50&nbsp;<span data-i18n="bag" style="color:var(--muted)">Багаж</span></span></div>
+    <div class="fcard-price"><span class="lab"><span data-i18n="from">от</span> · <span data-i18n="p_transfer">Трансфер</span></span><span class="val">40 000 ₸</span></div>
+    <div class="fcard-btn"><span class="btn btn-o btn-full" data-i18n="details">Подробнее</span></div>
+  </div>
+</a><a href="camry-80.html" class="fcard">
+  <div class="fcard-img"><span class="fcard-cls" data-i18n="cls_biz">Бизнес</span>
+    <div class="ph r43"><span class="lbl">camry-80-1.webp</span><img src="images/camry-80-1.webp" alt="Toyota Camry 80 с водителем в Астане" loading="lazy" onerror="this.remove()"></div></div>
+  <div class="fcard-b">
+    <div class="fcard-t">Toyota Camry 80</div>
+    <div class="fcard-d" data-i18n="d_camry-80">Новое поколение Camry. Современный бизнес-седан с плавным ходом.</div>
+    <div class="fcard-meta"><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M6 20a6 6 0 0112 0"/></svg>4&nbsp;<span data-i18n="pax" style="color:var(--muted)">Пассажиров</span></span><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="12" height="12" rx="2"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>3&nbsp;<span data-i18n="bag" style="color:var(--muted)">Багаж</span></span></div>
+    <div class="fcard-price"><span class="lab"><span data-i18n="from">от</span> · <span data-i18n="p_transfer">Трансфер</span></span><span class="val">15 000 ₸</span></div>
+    <div class="fcard-btn"><span class="btn btn-o btn-full" data-i18n="details">Подробнее</span></div>
+  </div>
+</a><a href="camry-75.html" class="fcard">
+  <div class="fcard-img"><span class="fcard-cls" data-i18n="cls_biz">Бизнес</span>
+    <div class="ph r43"><span class="lbl">camry-75-1.webp</span><img src="images/camry-75-1.webp" alt="Toyota Camry 75 с водителем в Астане" loading="lazy" onerror="this.remove()"></div></div>
+  <div class="fcard-b">
+    <div class="fcard-t">Toyota Camry 75</div>
+    <div class="fcard-d" data-i18n="d_camry-75">Надёжный бизнес-седан. Комфорт и практичность для города и трансферов.</div>
+    <div class="fcard-meta"><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M6 20a6 6 0 0112 0"/></svg>4&nbsp;<span data-i18n="pax" style="color:var(--muted)">Пассажиров</span></span><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="12" height="12" rx="2"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>3&nbsp;<span data-i18n="bag" style="color:var(--muted)">Багаж</span></span></div>
+    <div class="fcard-price"><span class="lab"><span data-i18n="from">от</span> · <span data-i18n="p_transfer">Трансфер</span></span><span class="val">13 000 ₸</span></div>
+    <div class="fcard-btn"><span class="btn btn-o btn-full" data-i18n="details">Подробнее</span></div>
+  </div>
+</a></div></div></section>
+<section class="sec"><div class="wrap"><div class="band">
+  <div><h2 class="band-h"><span data-i18n="cta_title">Готовы подать автомобиль</span></h2><p class="band-p"><span data-i18n="cta_sub">Позвоните или напишите — согласуем маршрут и подадим авто с водителем.</span></p></div>
+  <div class="band-r"><a href="tel:+77759876697" class="band-phone">+7 775 987 6697</a>
+    <a href="https://wa.me/77770105157?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%20%D1%81%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%20%28Fly%20Astana%20PTS%29." target="_blank" rel="noopener" class="btn">WhatsApp</a></div>
+</div></div></section>
+<footer class="footer">
+  <div class="wrap"><div class="grid-foot">
+    <div>
+      <div style="margin-bottom:14px"><img src="images/logo.png" alt="Fly Astana PTS" class="logo" onerror="var s=document.createElement('span');s.className='wm';s.innerHTML='Fly <b>Astana</b><span>Premium Transfers</span>';this.replaceWith(s)"></div>
+      <p class="foot-p"><span data-i18n="hero_sub">Трансфер в аэропорт, деловые поездки и VIP-обслуживание. Профессиональные водители, круглосуточно.</span></p>
+    </div>
+    <div><div class="foot-t" data-i18n="nav_fleet">Автопарк</div><ul class="foot-list"><li><a href="avtopark.html" class="foot-link" data-i18n="nav_fleet">Автопарк</a></li><li><a href="uslugi.html" class="foot-link" data-i18n="nav_services">Услуги</a></li><li><a href="o-kompanii.html" class="foot-link" data-i18n="nav_about">О компании</a></li><li><a href="contacts.html" class="foot-link" data-i18n="nav_contacts">Контакты</a></li></ul></div>
+    <div>
+      <div class="foot-t" data-i18n="contacts_title">Контакты</div>
+      <a href="tel:+77759876697" class="foot-phone">+7 775 987 6697</a>
+      <p class="foot-p" style="margin-bottom:12px"><span data-i18n="hours">Круглосуточно, 7 дней в неделю</span></p>
+      <p class="foot-p"><a href="https://www.instagram.com/pts_flyastana" target="_blank" rel="noopener" class="foot-link">Instagram @pts_flyastana</a><br>
+      <a href="mailto:flyastana01@mail.ru" class="foot-link">flyastana01@mail.ru</a></p>
+    </div>
+  </div></div>
+  <div class="foot-bottom"><div class="wrap foot-bottom-in">
+    <span>© 2026 Fly Astana PTS</span>
+    <a href="https://wa.me/77074534518" target="_blank" rel="noopener">Разработка сайта — студия Anuken</a>
+  </div></div>
+</footer>
+<div class="fab-wrap">
+  <a href="https://wa.me/77770105157?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B0%D0%B2%D1%82%D0%BE%20%D1%81%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%20%28Fly%20Astana%20PTS%29." target="_blank" rel="noopener" class="fab fab-wa" aria-label="WhatsApp"><svg width="27" height="27" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.8.8.8-2.8-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.6 6.6 0 01-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.9.9-.9 2.1-.1 3.5a11 11 0 004.3 3.8c1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z"/></svg></a>
+  <a href="tel:+77759876697" class="fab fab-call" aria-label="Call"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1B1A18" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-3 2a12 12 0 006 6l2-3 5 2v4a2 2 0 01-2 2A16 16 0 014 6a2 2 0 010-2z"/></svg></a>
+  <button id="gotop" class="fab fab-up" aria-label="Top"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg></button>
+</div>
+<div id="lb" class="lb"><button class="lb-x" aria-label="Close"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="lb-nav lb-prev" aria-label="Prev"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <img id="lb-img" src="" alt="">
+  <button class="lb-nav lb-next" aria-label="Next"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+  <div id="lb-count" class="lb-count"></div>
+</div>
+<script>
+var I18N={"ru": {"brand_sub": "Премиальный трансфер", "with_driver": "Только с водителем", "nav_home": "Главная", "nav_fleet": "Автопарк", "nav_services": "Услуги", "nav_about": "О компании", "nav_contacts": "Контакты", "book": "Забронировать", "call": "Позвонить", "order": "Заказать", "details": "Подробнее", "hours": "Круглосуточно, 7 дней в неделю", "hero_title": "Аренда авто с водителем в Астане", "hero_sub": "Трансфер в аэропорт, деловые поездки и VIP-обслуживание. Профессиональные водители, круглосуточно.", "hero_note": "Все автомобили предоставляются только с профессиональным водителем", "stat_clients": "Довольных клиентов", "stat_years": "Лет на рынке", "stat_cars": "Авто в парке", "stat_247": "Без выходных", "services_title": "Услуги", "services_sub": "Полный спектр перевозок премиум-класса — всегда с водителем", "fleet_title": "Автопарк", "fleet_sub": "Автомобили всех классов с водителем", "fleet_all": "Весь автопарк", "why_title": "Почему выбирают нас", "pax": "Пассажиров", "bag": "Багаж", "p_hour": "Час", "p_transfer": "Трансфер", "p_day": "Сутки", "from": "от", "gallery_hint": "Нажмите на фото, чтобы рассмотреть", "specs": "Характеристики", "prices": "Стоимость", "order_car": "Забронировать этот автомобиль", "back_fleet": "Назад в автопарк", "cta_title": "Готовы подать автомобиль", "cta_sub": "Позвоните или напишите — согласуем маршрут и подадим авто с водителем.", "how_title": "Как это работает", "s1t": "Заявка", "s1d": "Позвоните или напишите в WhatsApp — опишите маршрут и время.", "s2t": "Подтверждение", "s2d": "Менеджер уточнит детали, подберёт авто и подтвердит цену.", "s3t": "Поездка", "s3d": "Водитель подаёт автомобиль вовремя. Комфортная поездка.", "contacts_title": "Контакты", "contacts_sub": "Работаем круглосуточно. Звоните или пишите в удобный канал.", "c_phone": "Телефон", "c_addr": "Адрес", "c_addr_v": "г. Астана, Казахстан", "c_hours": "Режим работы", "c_kp": "Запросить коммерческое предложение", "about_title": "О компании", "about_p1": "Fly Astana PTS — транспортная компания в Астане. Работаем с 2014 года, обслуживали международные форумы, делегации и официальные визиты.", "about_p2": "Все автомобили предоставляются только с профессиональным водителем: встречи в аэропорту, трансферы по городу и межгород, почасовая и посуточная аренда.", "airport_t": "Трансфер в аэропорт", "airport_d": "Встреча и проводы в аэропорту. Отслеживаем рейс и ждём при задержке.", "city_t": "Городской трансфер", "city_d": "Поездки по Астане в любое время суток. Точно в срок.", "intercity_t": "Межгородские поездки", "intercity_d": "Астана — Алматы, Астана — Актобе и другие направления с водителем.", "hourly_t": "Аренда по часам", "hourly_d": "Автомобиль с водителем в ваше распоряжение на несколько часов.", "corp_t": "Корпоративное обслуживание", "corp_d": "Поездки для сотрудников и партнёров. Договор и закрывающие документы.", "vip_t": "VIP-обслуживание", "vip_d": "Особый уровень сервиса: встреча с табличкой, вода, Wi-Fi.", "w1t": "Профессиональные водители", "w1d": "Опыт более 5 лет, знают город, вежливы и пунктуальны.", "w2t": "Автомобили премиум-класса", "w2d": "Регулярное техобслуживание, чистый салон, удобства в поездке.", "w3t": "Фиксированные цены", "w3d": "Стоимость согласуется заранее. Никаких сюрпризов.", "w4t": "Работаем 24/7", "w4d": "Принимаем заказы в любое время, включая срочные поездки.", "cls_biz": "Бизнес", "cls_vip": "VIP", "cls_prem": "Премиум", "cls_van": "Минивэн", "cls_bus": "Автобус", "d_land-cruiser-300": "Флагманский внедорожник для города и трасс. Простор, надёжность и статус.", "d_mercedes-s223": "Новейший флагман S-класса. Тишина, технологии и представительский комфорт.", "d_mercedes-s222": "Представительский седан S-класса. Кожаный салон и плавность хода.", "d_mercedes-v-class": "VIP-минивэн для групп до 7 человек. Простор для делегаций и семьи.", "d_mercedes-sprinter": "VIP-микроавтобус: кожаные диваны и простор для больших групп.", "d_haiger-bus": "Туристический автобус: кондиционер, шторки, багажный отсек. Для групп и делегаций.", "d_camry-80": "Новое поколение Camry. Современный бизнес-седан с плавным ходом.", "d_camry-75": "Надёжный бизнес-седан. Комфорт и практичность для города и трансферов."}, "kz": {"brand_sub": "Премиум трансфер", "with_driver": "Тек жүргізушімен", "nav_home": "Басты бет", "nav_fleet": "Автопарк", "nav_services": "Қызметтер", "nav_about": "Компания", "nav_contacts": "Байланыс", "book": "Брондау", "call": "Қоңырау шалу", "order": "Тапсырыс", "details": "Толығырақ", "hours": "Тәулік бойы, аптасына 7 күн", "hero_title": "Астанада жүргізушімен авто жалдау", "hero_sub": "Әуежайға трансфер, іскерлік сапарлар және VIP қызмет. Кәсіби жүргізушілер, тәулік бойы.", "hero_note": "Барлық көліктер тек кәсіби жүргізушімен беріледі", "stat_clients": "Риза клиенттер", "stat_years": "Жыл нарықта", "stat_cars": "Автопаркте", "stat_247": "Демалыссыз", "services_title": "Қызметтер", "services_sub": "Премиум-класс тасымалдың толық спектрі — әрдайым жүргізушімен", "fleet_title": "Автопарк", "fleet_sub": "Барлық класты көліктер жүргізушімен", "fleet_all": "Барлық автопарк", "why_title": "Неге бізді таңдайды", "pax": "Жолаушы", "bag": "Багаж", "p_hour": "Сағат", "p_transfer": "Трансфер", "p_day": "Тәулік", "from": "бастап", "gallery_hint": "Қарау үшін суретті басыңыз", "specs": "Сипаттамалары", "prices": "Бағасы", "order_car": "Осы көлікті брондау", "back_fleet": "Автопаркке оралу", "cta_title": "Көлік беруге дайынбыз", "cta_sub": "Қоңырау шалыңыз немесе жазыңыз — бағытты келісіп, жүргізушімен көлік береміз.", "how_title": "Бұл қалай жұмыс істейді", "s1t": "Өтінім", "s1d": "Қоңырау шалыңыз немесе WhatsApp жазыңыз — бағыт пен уақытты айтыңыз.", "s2t": "Растау", "s2d": "Менеджер мәліметтерді нақтылап, көлік таңдап, бағаны растайды.", "s3t": "Сапар", "s3d": "Жүргізуші көлікті уақытында береді. Жайлы сапар.", "contacts_title": "Байланыс", "contacts_sub": "Тәулік бойы жұмыс істейміз. Ыңғайлы арнаға хабарласыңыз.", "c_phone": "Телефон", "c_addr": "Мекенжай", "c_addr_v": "Астана қ., Қазақстан", "c_hours": "Жұмыс уақыты", "c_kp": "Коммерциялық ұсыныс сұрау", "about_title": "Компания туралы", "about_p1": "Fly Astana PTS — Астанадағы көлік компаниясы. 2014 жылдан бері жұмыс істейміз, халықаралық форумдарға, делегацияларға қызмет көрсеттік.", "about_p2": "Барлық көліктер тек кәсіби жүргізушімен беріледі: әуежайда қарсы алу, қала және қалааралық трансфер, сағаттық және тәуліктік жалдау.", "airport_t": "Әуежайға трансфер", "airport_d": "Әуежайда қарсы алу және шығарып салу. Рейсті бақылап, кідірісте күтеміз.", "city_t": "Қалалық трансфер", "city_d": "Тәуліктің кез келген уақытында Астана бойынша сапарлар. Дәл уақытында.", "intercity_t": "Қалааралық сапарлар", "intercity_d": "Астана — Алматы, Астана — Ақтөбе және басқа бағыттар жүргізушімен.", "hourly_t": "Сағаттық жалдау", "hourly_d": "Жүргізушімен көлік бірнеше сағатқа сіздің қарамағыңызда.", "corp_t": "Корпоративтік қызмет", "corp_d": "Қызметкерлер мен серіктестерге сапарлар. Шарт және жабу құжаттары.", "vip_t": "VIP қызмет", "vip_d": "Ерекше қызмет деңгейі: тақтайшамен қарсы алу, су, Wi-Fi.", "w1t": "Кәсіби жүргізушілер", "w1d": "5 жылдан астам тәжірибе, қаланы біледі, сыпайы әрі ұқыпты.", "w2t": "Премиум-класс көліктер", "w2d": "Тұрақты техқызмет, таза салон, сапарда ыңғайлылық.", "w3t": "Тіркелген бағалар", "w3d": "Баға алдын ала келісіледі. Ешқандай тосын жағдай жоқ.", "w4t": "24/7 жұмыс", "w4d": "Кез келген уақытта тапсырыс қабылдаймыз, шұғыл сапарларды қоса.", "cls_biz": "Бизнес", "cls_vip": "VIP", "cls_prem": "Премиум", "cls_van": "Минивэн", "cls_bus": "Автобус", "d_land-cruiser-300": "Қала мен тасжол үшін флагман внедорожник. Кеңдік, сенімділік және мәртебе.", "d_mercedes-s223": "S-класстың жаңа флагманы. Тыныштық, технологиялар және өкілдік жайлылық.", "d_mercedes-s222": "S-класс өкілдік седаны. Былғары салон және жүрістің тегістігі.", "d_mercedes-v-class": "7 адамға дейінгі топтарға арналған VIP-минивэн. Делегация мен отбасына кеңдік.", "d_mercedes-sprinter": "VIP-шағын автобус: былғары диван және үлкен топтарға кеңдік.", "d_haiger-bus": "Туристік автобус: кондиционер, перделер, багаж бөлімі. Топтар мен делегацияларға.", "d_camry-80": "Camry-дың жаңа буыны. Заманауи бизнес-седан, жүрісі тегіс.", "d_camry-75": "Сенімді бизнес-седан. Қала мен трансферге жайлылық пен қолайлылық."}, "en": {"brand_sub": "Premium Transfers", "with_driver": "Chauffeur only", "nav_home": "Home", "nav_fleet": "Fleet", "nav_services": "Services", "nav_about": "About", "nav_contacts": "Contacts", "book": "Book now", "call": "Call", "order": "Order", "details": "Details", "hours": "Around the clock, 7 days a week", "hero_title": "Chauffeured car hire in Astana", "hero_sub": "Airport transfers, business trips and VIP service. Professional drivers, 24/7.", "hero_note": "Every car comes with a professional chauffeur — driver only", "stat_clients": "Happy clients", "stat_years": "Years on the market", "stat_cars": "Cars in fleet", "stat_247": "No days off", "services_title": "Services", "services_sub": "A full range of premium transport — always chauffeured", "fleet_title": "Our fleet", "fleet_sub": "Cars of every class, with a driver", "fleet_all": "View full fleet", "why_title": "Why choose us", "pax": "Passengers", "bag": "Luggage", "p_hour": "Hour", "p_transfer": "Transfer", "p_day": "Day", "from": "from", "gallery_hint": "Tap a photo to view", "specs": "Specifications", "prices": "Pricing", "order_car": "Book this car", "back_fleet": "Back to fleet", "cta_title": "Ready to send a car", "cta_sub": "Call or message us — we'll agree the route and send a chauffeured car.", "how_title": "How it works", "s1t": "Request", "s1d": "Call or message on WhatsApp with your route and time.", "s2t": "Confirmation", "s2d": "A manager confirms details, the car and the fixed price.", "s3t": "The ride", "s3d": "The chauffeur arrives on time. Enjoy the ride.", "contacts_title": "Contacts", "contacts_sub": "We work 24/7. Reach us on any channel below.", "c_phone": "Phone", "c_addr": "Address", "c_addr_v": "Astana, Kazakhstan", "c_hours": "Working hours", "c_kp": "Request a proposal", "about_title": "About the company", "about_p1": "Fly Astana PTS is a transport company in Astana. Operating since 2014, we have served international forums, delegations and official visits.", "about_p2": "Every car is provided with a professional driver only: airport meet-and-greet, city and intercity transfers, hourly and daily hire.", "airport_t": "Airport transfer", "airport_d": "Meet-and-greet at the airport. We track the flight and wait if delayed.", "city_t": "City transfer", "city_d": "Rides across Astana at any hour. Always on time.", "intercity_t": "Intercity trips", "intercity_d": "Astana — Almaty, Astana — Aktobe and other routes, chauffeured.", "hourly_t": "Hourly hire", "hourly_d": "A chauffeured car at your disposal for several hours.", "corp_t": "Corporate service", "corp_d": "Rides for staff and partners. Contract and full accounting documents.", "vip_t": "VIP service", "vip_d": "An elevated level of service: name-board meet, water, Wi-Fi.", "w1t": "Professional drivers", "w1d": "5+ years of experience, know the city, courteous and punctual.", "w2t": "Premium vehicles", "w2d": "Regular servicing, spotless interior, in-ride comfort.", "w3t": "Fixed prices", "w3d": "The price is agreed upfront. No surprises.", "w4t": "Available 24/7", "w4d": "We take bookings any time, including urgent trips.", "cls_biz": "Business", "cls_vip": "VIP", "cls_prem": "Premium", "cls_van": "Minivan", "cls_bus": "Coach", "d_land-cruiser-300": "Flagship SUV for city and highway. Space, reliability and status.", "d_mercedes-s223": "The newest S-class flagship. Silence, technology and executive comfort.", "d_mercedes-s222": "Executive S-class sedan. Leather interior and a smooth ride.", "d_mercedes-v-class": "VIP minivan for groups up to 7. Room for delegations and families.", "d_mercedes-sprinter": "VIP shuttle: leather sofas and space for larger groups.", "d_haiger-bus": "Touring coach: air-con, curtains, luggage bay. For groups and delegations.", "d_camry-80": "New-generation Camry. A modern business sedan with a smooth ride.", "d_camry-75": "A dependable business sedan. Comfort and practicality for city and transfers."}, "zh": {"brand_sub": "高端接送服务", "with_driver": "仅配司机", "nav_home": "首页", "nav_fleet": "车队", "nav_services": "服务", "nav_about": "关于我们", "nav_contacts": "联系", "book": "预订", "call": "致电", "order": "下单", "details": "详情", "hours": "全天候，每周7天", "hero_title": "阿斯塔纳专车配司机租赁", "hero_sub": "机场接送、商务出行与VIP服务。专业司机，全天候待命。", "hero_note": "所有车辆均配备专业司机，仅提供带司机服务", "stat_clients": "满意客户", "stat_years": "年经验", "stat_cars": "车队车辆", "stat_247": "全年无休", "services_title": "我们的服务", "services_sub": "全方位高端出行服务 — 始终配司机", "fleet_title": "我们的车队", "fleet_sub": "各级别车型，均配司机", "fleet_all": "查看全部车队", "why_title": "为什么选择我们", "pax": "乘客", "bag": "行李", "p_hour": "小时", "p_transfer": "接送", "p_day": "全天", "from": "起", "gallery_hint": "点击照片查看大图", "specs": "规格", "prices": "价格", "order_car": "预订此车", "back_fleet": "返回车队", "cta_title": "随时为您派车", "cta_sub": "致电或留言 — 我们将确认路线并派出配司机的车辆。", "how_title": "预订流程", "s1t": "提交需求", "s1d": "致电或通过WhatsApp告知路线与时间。", "s2t": "确认", "s2d": "客服确认细节、车型与固定价格。", "s3t": "出行", "s3d": "司机准时抵达，享受舒适旅程。", "contacts_title": "联系我们", "contacts_sub": "全天候服务。请通过以下任意方式联系我们。", "c_phone": "电话", "c_addr": "地址", "c_addr_v": "哈萨克斯坦，阿斯塔纳", "c_hours": "营业时间", "c_kp": "索取商业报价", "about_title": "关于我们", "about_p1": "Fly Astana PTS 是阿斯塔纳的运输公司。自2014年运营，曾服务国际论坛、代表团及官方访问。", "about_p2": "所有车辆均仅配专业司机：机场迎接、市内及城际接送、按小时及按天租赁。", "airport_t": "机场接送", "airport_d": "机场迎送。我们跟踪航班，延误也会等候。", "city_t": "市内接送", "city_d": "阿斯塔纳市内全天候出行，准时可靠。", "intercity_t": "城际出行", "intercity_d": "阿斯塔纳—阿拉木图、阿斯塔纳—阿克托别等线路，均配司机。", "hourly_t": "按小时租车", "hourly_d": "配司机的车辆供您使用数小时。", "corp_t": "企业服务", "corp_d": "为员工与合作伙伴提供出行。签订合同并提供完整票据。", "vip_t": "VIP服务", "vip_d": "更高服务标准：举牌迎接、饮用水、Wi-Fi。", "w1t": "专业司机", "w1d": "5年以上经验，熟悉城市，礼貌准时。", "w2t": "高端车型", "w2d": "定期保养，车厢整洁，行程舒适。", "w3t": "固定价格", "w3d": "价格提前确认，绝无隐藏费用。", "w4t": "全天候24/7", "w4d": "任何时间接受预订，包括紧急出行。", "cls_biz": "商务", "cls_vip": "VIP", "cls_prem": "至尊", "cls_van": "商务车", "cls_bus": "大巴", "d_land-cruiser-300": "旗舰SUV，适合市区与长途。宽敞、可靠、彰显身份。", "d_mercedes-s223": "全新S级旗舰。静谧、科技与行政级舒适。", "d_mercedes-s222": "S级行政轿车。真皮内饰，行驶平顺。", "d_mercedes-v-class": "VIP商务车，可载7人。适合代表团与家庭出行。", "d_mercedes-sprinter": "VIP中巴：真皮沙发，适合大型团队。", "d_haiger-bus": "旅游大巴：空调、窗帘、行李舱。适合团队与代表团。", "d_camry-80": "新一代凯美瑞。现代商务轿车，行驶平顺。", "d_camry-75": "可靠的商务轿车。舒适实用，适合市内与接送。"}};
+var TITLES={"home": {"ru": "Аренда авто с водителем в Астане | Fly Astana PTS", "en": "Chauffeured car hire in Astana | Fly Astana PTS", "kz": "Астанада жүргізушімен авто жалдау | Fly Astana PTS", "zh": "阿斯塔纳专车配司机租赁 | Fly Astana PTS"}, "fleet": {"ru": "Автопарк — авто с водителем в Астане | Fly Astana PTS", "en": "Fleet — chauffeured cars in Astana | Fly Astana PTS", "kz": "Автопарк — жүргізушімен авто | Fly Astana PTS", "zh": "车队 — 阿斯塔纳专车 | Fly Astana PTS"}, "services": {"ru": "Услуги — трансфер и аренда с водителем | Fly Astana PTS", "en": "Services — transfers & chauffeur hire | Fly Astana PTS", "kz": "Қызметтер — трансфер | Fly Astana PTS", "zh": "服务 — 接送与专车 | Fly Astana PTS"}, "about": {"ru": "О компании | Fly Astana PTS", "en": "About | Fly Astana PTS", "kz": "Компания туралы | Fly Astana PTS", "zh": "关于我们 | Fly Astana PTS"}, "contacts": {"ru": "Контакты | Fly Astana PTS", "en": "Contacts | Fly Astana PTS", "kz": "Байланыс | Fly Astana PTS", "zh": "联系我们 | Fly Astana PTS"}, "car": {"ru": "Автомобиль с водителем | Fly Astana PTS", "en": "Chauffeured car | Fly Astana PTS", "kz": "Жүргізушімен көлік | Fly Astana PTS", "zh": "专车配司机 | Fly Astana PTS"}};
+(function(){
+  var lang=localStorage.getItem('flypts_lang')||'ru';
+  function apply(l){
+    if(!I18N[l])l='ru'; lang=l; localStorage.setItem('flypts_lang',l);
+    document.documentElement.lang=(l==='kz'?'kk':l==='zh'?'zh':l==='en'?'en':'ru');
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var k=el.getAttribute('data-i18n'); if(I18N[l][k]!=null)el.textContent=I18N[l][k];
+    });
+    var pg=document.body.parentElement.getAttribute('data-page');
+    if(TITLES[pg]&&TITLES[pg][l])document.title=TITLES[pg][l];
+    document.querySelectorAll('[data-lang]').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-lang')===l);});
+  }
+  document.querySelectorAll('[data-lang]').forEach(function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-lang'));});});
+  apply(lang);
+  // menu
+  var bg=document.getElementById('burger'),m=document.getElementById('menu'),c=document.getElementById('close');
+  function op(){m.classList.add('open');document.body.style.overflow='hidden';}
+  function cl(){m.classList.remove('open');document.body.style.overflow='';}
+  if(bg)bg.addEventListener('click',op); if(c)c.addEventListener('click',cl);
+  if(m)m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',cl);});
+  // gotop
+  var gt=document.getElementById('gotop');
+  if(gt)gt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  window.addEventListener('scroll',function(){if(!gt)return;var s=window.scrollY>440;gt.style.opacity=s?'1':'0';gt.style.pointerEvents=s?'auto':'none';},{passive:true});
+  // placeholder labels
+  document.querySelectorAll('.ph img,.hero-img img,.gthumb img,.gmain img').forEach(function(img){
+    var lbl=img.parentNode.querySelector('.lbl'); function h(){if(lbl)lbl.style.display='none';}
+    if(img.complete&&img.naturalWidth>0)h(); img.addEventListener('load',h);
+  });
+  // lightbox
+  var lb=document.getElementById('lb'),lbi=document.getElementById('lb-img'),lbc=document.getElementById('lb-count');
+  var thumbs=[].slice.call(document.querySelectorAll('.gthumb')),idx=0;
+  var srcs=thumbs.map(function(tb){return tb.getAttribute('data-full');});
+  function show(i){ if(!srcs.length)return; idx=(i+srcs.length)%srcs.length; lbi.src=srcs[idx]; lbc.textContent=(idx+1)+' / '+srcs.length;
+    var gm=document.getElementById('gmain-img'); if(gm)gm.src=srcs[idx];
+    thumbs.forEach(function(tb,j){tb.classList.toggle('on',j===idx);});
+  }
+  function open(i){show(i);lb.classList.add('open');document.body.style.overflow='hidden';}
+  function close(){lb.classList.remove('open');document.body.style.overflow='';}
+  thumbs.forEach(function(tb,i){tb.addEventListener('click',function(){open(i);});});
+  var gmain=document.getElementById('gmain'); if(gmain)gmain.addEventListener('click',function(){open(idx);});
+  if(lb){
+    lb.querySelector('.lb-x').addEventListener('click',close);
+    lb.querySelector('.lb-prev').addEventListener('click',function(e){e.stopPropagation();show(idx-1);});
+    lb.querySelector('.lb-next').addEventListener('click',function(e){e.stopPropagation();show(idx+1);});
+    lb.addEventListener('click',function(e){if(e.target===lb)close();});
+    document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(idx-1);if(e.key==='ArrowRight')show(idx+1);});
+  }
+  if(thumbs.length)show(0);
+})();
+</script>
+
+</body>
+</html>
