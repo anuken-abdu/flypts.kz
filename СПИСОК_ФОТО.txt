@@ -1,17 +1,26 @@
-ИЗОБРАЖЕНИЯ ДЛЯ САЙТА Fly Astana PTS (папка images/, имена точь-в-точь)
+ИЗОБРАЖЕНИЯ ДЛЯ САЙТА Fly Astana PTS
+Папка images/ — имена файлов ТОЧЬ-В-ТОЧЬ. Формат WEBP или JPG, качество 80-85%, sRGB.
+Вес: фото до 300 КБ, фоны до 500 КБ. Соблюдай пропорции (иначе обрежется).
 
-logo.png  — логотип (прозрачный PNG, высота ~88px). Пока нет — текст Fly Astana.
-favicon.png — иконка вкладки
-hero-main.webp — фото на главную (4:3, авто/премиум-салон)
+ЛОГОТИП / ИКОНКА
+  logo.png     PNG, прозрачный фон, светлый, ~320x88 px (высота 88), без рамок
+  favicon.png  64x64 px
 
-По 6 фото на каждый автомобиль (1 — карточка, 6 — галерея с увеличением), 4:3:
-  land-cruiser-300-1.webp … land-cruiser-300-6.webp   (Toyota Land Cruiser 300)
-  mercedes-s223-1.webp … mercedes-s223-6.webp   (Mercedes-Benz S-class (W223))
-  mercedes-s222-1.webp … mercedes-s222-6.webp   (Mercedes-Benz S-class (W222))
-  mercedes-v-class-1.webp … mercedes-v-class-6.webp   (Mercedes-Benz V-class)
-  mercedes-sprinter-1.webp … mercedes-sprinter-6.webp   (Mercedes-Benz Sprinter VIP)
-  haiger-bus-1.webp … haiger-bus-6.webp   (Автобус Haiger)
-  camry-80-1.webp … camry-80-6.webp   (Toyota Camry 80)
-  camry-75-1.webp … camry-75-6.webp   (Toyota Camry 75)
+ФОН ГЛАВНОЙ (первый экран) — ОТДЕЛЬНО для ПК и телефона:
+  hero-desktop.webp   ПК, горизонтальный 16:9, 1920x1080 px
+  hero-mobile.webp    Телефон, вертикальный 3:4, 1080x1440 px
+  (поверх фото идёт затемнение и текст — берите спокойное, тёмное фото)
 
-Итого: 48 фото авто + hero + logo + favicon
+ФОТО АВТО — по 6 на модель (всего 48), пропорции 4:3, 1200x900 px:
+  фото 1 — главное (карточка + большое фото), фото 2-6 — осмотр (экстерьер, салон, детали)
+  land-cruiser-300-1.webp ... land-cruiser-300-6.webp   (Toyota Land Cruiser 300)
+  mercedes-s223-1.webp ... mercedes-s223-6.webp   (Mercedes-Benz S-class (W223))
+  mercedes-s222-1.webp ... mercedes-s222-6.webp   (Mercedes-Benz S-class (W222))
+  mercedes-v-class-1.webp ... mercedes-v-class-6.webp   (Mercedes-Benz V-class)
+  mercedes-sprinter-1.webp ... mercedes-sprinter-6.webp   (Mercedes-Benz Sprinter VIP)
+  haiger-bus-1.webp ... haiger-bus-6.webp   (Автобус Haiger)
+  camry-80-1.webp ... camry-80-6.webp   (Toyota Camry 80)
+  camry-75-1.webp ... camry-75-6.webp   (Toyota Camry 75)
+
+ИТОГО: logo + favicon + hero-desktop + hero-mobile + 48 фото авто = 52 файлов
+Пока файла нет — показывается имя нужного файла. Имена менять нельзя.
